@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+// font-family: 'Heebo', sans-serif;
+:root {
+    --color-primary: #4e75e0;
+    --color-primary-light: #585a7f;
+    --color-primary-light-2: #1a87f5;
+    --color-primary-dark: #4c4f75;
+    
+    --color-secondary-light-1: #faf9f9;
+    --color-secondary-light-2: #f4f2f2;
+    --color-secondary-light-3: #f0eeee;
+    --color-secondary-light-4: #ccc;
+    --color-secondary-light-5: #f6f7fd;
+
+    --color-light: #fff;
+    --color-light-grey: #f6f7fd;
+
+    --color-tertiary-1: #eff6ff;
+    --color-tertiary-2: #dbe3ec;
+    --color-tertiary-3: #57cef0;
+    --color-tertiary-4: #4e78de;
+
+}
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    color: var(--color-primary-dark);
+    font-family: 'Heebo', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: var(--color-tertiary-4);
+}
+.btn{
+    font-size: 1.2rem;
+    display: block;
+    width: fit-content;
+    padding: .7em 1.2em;
+    margin: 0.5rem;
+    outline: none;
+    cursor: pointer;
+}
+.button-curve{
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border: 0;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 0.2em;
+    border-top-right-radius: 1.5em;
+    border-top-left-radius: 0.2em;
+}
+.button-round{
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    border: 0;
+    border-radius: 3em;
+}
+.btn-light{
+    background-color: var(--color-tertiary-1) !important;
+   color: var(--color-primary);
+}
+.btn-heavy{
+    font-weight: bold;
+    font-size: 1em;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}

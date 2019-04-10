@@ -1,0 +1,57 @@
+.quote{
+    background: var(--color-light);
+    display: flex;
+    margin: 2rem 0;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url(../../../assets/hiking.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 23rem;
+    &>.sub-heading{
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        color: var(--color-tertiary-3);
+    }
+    &>.heading{
+        font-size: 1.5rem;
+        width: 40%;
+        font-weight: 200;
+    }
+    &>.quotes{
+        margin-top: 2rem;
+        width: 40%;
+        padding: 0.3rem;
+        &>.item{
+            display: grid;
+            grid-template-columns: 0.2fr 0.8fr;
+            grid-template-rows: 1fr;
+            padding: 1rem;
+            border-radius: 0.3rem;
+            &:hover{
+                box-shadow: 0em 0em .5em .05em #c0c0c0cc;
+                cursor: pointer;
+            }
+            & .image{
+                width:2.5rem;
+                height: 2.5rem;
+            }
+            & .item-content{
+                display: grid;
+                grid-template-rows: 0.2fr 0.8fr;
+                h3{
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+                article{
+                    font-size: 0.8rem;
+                }
+            }
+            & .item-image{
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+    }
+}

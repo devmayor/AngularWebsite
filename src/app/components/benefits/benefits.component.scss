@@ -1,0 +1,93 @@
+.benefits{
+    margin: 3em 0;
+    background: var(--color-light);
+    &>.container{
+        
+        display: flex;
+        // justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }    
+    & .header{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1rem 0;
+        margin-top: 5rem;
+        width: 65%;
+        text-align: center;
+    }
+    & .sub-heading{
+        font-size: 0.8rem;
+        font-weight: 400;
+        width: 55%;
+        text-align: center;
+    }
+    & .content{
+        margin: 2rem 0;
+        margin-bottom: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+                
+        & .item{
+            padding: 1rem 0;
+            border-radius: 0.5rem;
+            background-color: var(--color-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 1rem;
+            &:hover{
+                box-shadow: 1px 1px 7px 4px var(--color-secondary-light-4);
+            }
+            & .icon{
+                
+                padding: 0.8rem;
+                // background-color: var(--color-primary);
+                display: flex;
+                border-radius: 20px;
+                justify-content: center;
+                align-items: center;
+                color: var(--color-light);
+                margin-bottom: 1rem;
+                & i{
+                    font-size: 1.5rem;
+                }
+                
+            }
+            & h5{
+                font-size: 0.8rem;
+                font-weight: 400;
+            }
+            
+        }
+        .icon-1{
+            background-color: #36e2d7;
+        }
+        .icon-2{
+            background-color: #78c04f;
+        }
+        .icon-3{
+            background-color: #f76a6c;
+        }
+        .icon-4{
+            background-color: #a349ce;
+        }
+        .icon-5{
+            background-color: #30ceec;
+        }
+        .icon-6{
+            background-color: #fb8540;
+        }
+        .icon-7{
+            background-color: #4ad492;
+        }
+        .icon-8{
+            background-color: #1e92e3;
+        }
+        
+    }
+}

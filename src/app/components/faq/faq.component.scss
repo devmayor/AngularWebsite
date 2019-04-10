@@ -1,0 +1,56 @@
+.faq{
+    margin: 5em 0;
+    background: var(--color-light);
+    &>.container{
+        display: flex;
+        justify-content: space-around;
+    }    
+    & .left-container{
+        flex: 1;
+        padding-right: 4rem;
+        &>.sub-heading{
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: var(--color-tertiary-3);
+        }
+        &>.heading{
+            font-size: 1.5rem;
+            font-weight: 200;
+            margin-bottom: 1rem;
+        }
+        &>article{
+            font-size: 0.9rem;
+        }
+        &>footer{
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+    }
+    & .right-container{
+        flex: 1;
+        & .accordion{
+            & .item{
+                padding: 1.2rem;
+                background-color: var(--color-light-grey);
+                margin: 1rem;
+                margin-left: 0;
+                border-radius: 6px;
+                & .item-top{
+                    display: flex;
+                    justify-content: space-between;
+                    & h4{
+                        font-weight: 400;
+                    }
+                    & i{
+                        margin-right: 1rem;
+                        cursor: pointer;
+                    }
+                }
+                & article{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+        
+}

@@ -1,0 +1,30 @@
+nav{
+    height: 3rem;
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    
+    &>.logo{
+        width: 10rem;
+        height: 2rem;
+        // margin-left: .5rem;
+    }
+
+    &>.nav{
+      display: flex;
+      justify-content: space-evenly;
+      margin-right: 2rem;
+      font-size: 0.8rem;
+      & a{
+          text-decoration: none;
+      }
+      & span{
+        padding: .9em 1em;
+        font-weight: bold;
+      }  
+      
+    }
+
+}

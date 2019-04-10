@@ -1,0 +1,93 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    &>.left-container{
+        flex: 1;
+        display: flex;
+        background-color: var(--color-secondary-light-5); 
+        justify-content: flex-end;
+        padding: 5em;
+        & .caption{
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        & .form-btn{
+            &>input{
+                height: 1.8rem;
+                padding: 5px;
+                border: none;
+                outline: none;
+                width:70%;
+            }
+            &>button{
+                display: inline-block;
+                font-size: 0.8rem;
+                background-color: #1a87f5;
+                color: #fff;
+                border: none;
+                height: 2.32rem;
+                margin: 0;
+            }
+        }
+        & .socials{
+           display: flex;
+           justify-content: flex-start;
+        }
+        & .item{
+            color: #1a87f5;
+            padding: 0.8rem;
+        }
+
+        & .signup{
+            font-size: 0.9rem;
+        }
+        & .question{
+            font-size: 1rem;
+            margin-bottom: 0.7rem;
+            margin-top: 1.1rem;
+        }
+        & .info{
+            width: 100%;
+            display: inline-block;
+            margin: 0.3rem 0;
+        }
+        & .in-touch{
+            text-transform: uppercase;
+            margin: 1rem 0;
+        }
+        & .copy{
+            font-size: 0.7rem;
+        }
+    }
+    &>.right-container{
+        display: flex;
+        padding: 5em;
+        flex: 1;
+        & .logo{
+            width: 10rem;
+        }
+        & .info {
+            font-size: 0.9rem;
+            margin: 0.7rem 0;
+        }
+        &>div>.heading{
+            font-size: 1rem;
+            margin: 1.1rem 0;
+        }
+        & .content{
+            display: flex;
+            justify-content: space-between;
+            & .link{
+                text-decoration: none;
+                color: var(--color-primary-dark);
+                margin: 1rem 0;
+                display: flex;
+                font-size: 0.9rem;
+            }
+        }
+    }
+    &>div>div{
+        width: 80%;
+        
+    }
+}
