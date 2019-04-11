@@ -11,27 +11,15 @@
       </div>
       <div class="right-container">
         <div class="accordion">
-          <div class="item">
+          <div *ngFor="let item of accordion;let i=index" class="item">
             <div class="item-top">
-                <h4>What kind of vehicles will you buy?</h4>
-                <i class="material-icons">keyboard_arrow_up</i>
+                <h4>{{item.heading}}</h4>
+                <i *ngIf="item.active" class="material-icons" (click)="accordionChange(i)">keyboard_arrow_up</i>
+                <i *ngIf="!item.active" class="material-icons" (click)="accordionChange(i)">keyboard_arrow_down</i>
             </div>            
-            <article>At sevvicar we love all kinds of vehicles including trucks, cars, vans, mini vans and Suv's. We want to buy and year, make or model</article>
+            <article *ngIf="item.active">{{item.article}}</article>
           </div>
-          <div class="item">
-              <div class="item-top">
-                  <h4>What do i need to sell my car?</h4>
-                  <i class="material-icons">keyboard_arrow_down</i>
-              </div>
-            <article></article>
-          </div>
-          <div class="item">
-              <div class="item-top">
-                  <h4>What do i need to buy a car?</h4>
-                  <i class="material-icons">keyboard_arrow_down</i>
-              </div>
-            <article></article>
-          </div>
+
         </div>
         <p>For more questions visit our <a href="" class="">Visited Faq</a></p>
       </div>

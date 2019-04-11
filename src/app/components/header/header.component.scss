@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 header{
     margin: 3em 0;
     // margin-bottom: 1rem;
@@ -34,7 +36,7 @@ header{
                 display: grid;
                 grid-template-columns: 1fr 1fr; 
                 grid-template-rows: 1fr 1fr; 
-                height: 4rem;
+                height: auto;
             }
             & .box-item{
                 display: grid;
@@ -53,4 +55,35 @@ header{
             width: 100%;
         }
     }
+    @media only screen and (max-width: 1040px){
+        &{
+            justify-content: center;
+        }
+        &>.left-container{
+            padding: .5em;
+            &>.heading{
+                font-size: 1.5em;
+                text-align: center;
+                &>span{
+                    font-size: 1.4em;
+                }    
+            }
+            &>.small-heading{
+                text-align: center;
+            }
+            &>.box{
+                justify-content: center;
+            }
+            
+        }
+        &>.right-container{
+            display: none;
+        }
+    }
+    // @media only screen and (max-width: $bp-small){
+    //     &>.left-container{
+    //         background-image: url(../../../assets/car.png);
+    //         background-size: contain;
+    //     }
+    // }
 }

@@ -9,6 +9,20 @@
       Get Started Now
     </span></a>
   </div>
+  <div (click)="toggleNav()" class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
 </nav>
+<div class="overlay" *ngIf="toggle">
+  <a href="#"><span>About Us </span></a>
+  <a href="#"><span>How it works</span></a>
+  <a href="#"><span>Schedule</span></a>
+  <a href="#"><span>Faq</span></a>
+  <a href="#"><span>Get Started Now</span></a>
+</div>
 
 

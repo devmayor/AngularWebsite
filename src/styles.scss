@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Heebo');
 // font-family: 'Heebo', sans-serif;
+@import "./variables.scss";
 :root {
     --color-primary: #4e75e0;
     --color-primary-light: #585a7f;
@@ -23,6 +24,7 @@
     --color-tertiary-4: #4e78de;
 
 }
+
 html{
     padding: 0;
     margin: 0;
@@ -75,4 +77,11 @@ a{
 .container{
     width: 80%;
     margin: auto;
+}
+@media only screen and (max-width: $bp-large){
+    .container {
+        width: 98% !important;
+        margin: auto !important;
+        padding: .5em;
+    }
 }

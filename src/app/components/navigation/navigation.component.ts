@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-
+public toggle = false;
   constructor() { }
 
   ngOnInit() {
   }
-
+  toggleNav() {
+    this.toggle = !this.toggle;
+  }
 }

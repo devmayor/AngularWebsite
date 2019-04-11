@@ -1,12 +1,22 @@
+@import "../../../variables.scss";
+@media only screen and (max-width: $bp-large){
+    .footer{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }   
+}
 .footer{
     display: flex;
     justify-content: space-around;
+  
     &>.left-container{
         flex: 1;
         display: flex;
         background-color: var(--color-secondary-light-5); 
         justify-content: flex-end;
         padding: 5em;
+
         & .caption{
             text-transform: uppercase;
             margin-bottom: 1rem;
@@ -27,6 +37,14 @@
                 border: none;
                 height: 2.32rem;
                 margin: 0;
+            }
+            @media only screen and (max-width: $bp-large){
+                &>input{
+                    width:100%;
+                }
+                &>button{
+                    width:100%;
+                }
             }
         }
         & .socials{
@@ -59,12 +77,29 @@
             font-size: 0.7rem;
         }
     }
+    @media only screen and (max-width: $bp-large){
+        &>.left-container{
+            padding: 0.5em;    
+            order: 2;
+            & .caption ,& .in-touch, & .copy{
+                text-align: center;
+            }
+            & .socials{
+                justify-content: center;
+            }
+        }
+    }   
     &>.right-container{
         display: flex;
         padding: 5em;
         flex: 1;
         & .logo{
             width: 10rem;
+        }
+        @media only screen and (max-width: $bp-large){
+            & .logo{
+                width: 5rem;
+            }   
         }
         & .info {
             font-size: 0.9rem;
@@ -86,8 +121,19 @@
             }
         }
     }
+    @media only screen and (max-width: $bp-large){
+        &>.right-container{
+            padding: 0.5em;
+            
+        }
+    }   
     &>div>div{
         width: 80%;
         
     }
+    @media only screen and (max-width: $bp-large){
+        &>div>div{
+            width: 100%;   
+        }
+    }   
 }

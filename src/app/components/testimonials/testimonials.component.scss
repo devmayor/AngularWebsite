@@ -1,3 +1,4 @@
+@import "../../../variables.scss";
 .testimonials{
     margin: 3em 0;
     background: var(--color-light-grey);
@@ -26,11 +27,11 @@
         margin: 2rem 0;
         margin-bottom: 5rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fit,minmax(12em,1fr));
+        grid-template-rows: minmax(19em, min-content);
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
-                
+        
         & .item{
             padding: 2rem;
             border-radius: 0.5rem;

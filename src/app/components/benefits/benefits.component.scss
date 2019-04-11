@@ -26,8 +26,12 @@
         margin: 2rem 0;
         margin-bottom: 5rem;
         display: grid;
-        grid-template-columns: repeat(4 , 1fr);
-        grid-template-rows: 1fr 1fr;
+        min-width: 55%;
+        // grid-template-columns: repeat(4 , 1fr);
+        // grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit,minmax(8.75em,1fr));
+        grid-template-rows: minmax(8.75em, min-content);
+
         grid-column-gap: 1.5rem;
         grid-row-gap: 1.5rem;
                 

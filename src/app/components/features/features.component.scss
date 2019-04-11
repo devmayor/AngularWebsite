@@ -17,8 +17,11 @@
     &>.content{
         margin: 2rem 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        // grid-template-columns: 1fr 1fr 1fr;
+        // grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit,minmax(12.188em,1fr));
+        grid-template-rows: minmax(18.5em, min-content);
+        
         & .item{
             padding: 2rem;
             &>.icon{
